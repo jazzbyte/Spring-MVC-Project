@@ -1,1 +1,211 @@
 @charset "UTF-8";
+
+@import url('http://fonts.cdnfonts.com/css/noto-sans');
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+@import url(http://www.openhiun.com/hangul/nanumbarungothic.css);
+
+html {
+	font-family: 'Noto Sans', Nanum Gothic, 'sans-serif';
+	/* font-family: system-ui,-apple-system,"Segoe UI",Roboto; */
+}
+
+body {
+	margin: 0;
+	background-color: #fafafa;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	background-color: #002060;
+	padding: 1rem;
+	margin-bottom: 3rem;
+}
+
+header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+footer {
+	margin: 3rem 0;
+	padding-top: 1rem;
+	padding-right: 1rem;
+	text-align: right;
+	border-top: 1px solid #ececec;
+}
+
+main {
+	width: 60%;
+	margin: auto;
+	padding: 30px;
+	background-color: #fff;
+}
+
+main .title {
+	text-align: left;
+}
+
+.logo {
+	font-size: 1.5rem;
+}
+
+.bank-icon {
+	margin: 0 0.5rem;
+}
+
+.nav {
+	display: flex;
+	list-style: none;
+	justify-content: right;
+	margin: 0;
+}
+
+.nav-link {
+	display: block;
+	padding: .5rem 1rem;
+	margin: 0 1rem;
+	color: white;
+	text-decoration: none;
+	transition: color .15s ease-in-out, background-color .15s ease-in-out,
+		border-color .15s ease-in-out;
+}
+
+.cinfo{
+	text-align: right;
+	color: white;
+	font-size: 0.7rem;
+	font-weight: 400;
+	padding-right: 1rem;
+}
+
+.copy{
+	font-weight: bold;
+	font-size: 0.8rem;
+	color: #C0504D;
+}
+
+.form-unit {
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+.form-unit label {
+	display: block;
+	margin-bottom: 0.5rem;
+}
+
+.form-unit .form-control {
+	width: -webkit-fill-available;
+	padding: 0.5rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+	border: 1px solid #ced4da;
+}
+
+.group-unit {
+	display: flex;
+}
+
+.submit-btn {
+	width: 100%;
+	color: #fff;
+	background-color: #002060;
+	border-color: #002060;
+	padding: .5rem 1rem;
+	font-size: 1.25rem;
+	border-radius: .3rem;
+	border-style: none;
+	display: inline-block;
+	font-weight: 400;
+	line-height: 1.5;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+.catalog3-div {
+	border: 2px solid #002060;
+	display: inline-block;
+	padding: 10px;
+	width: 29%;
+	text-align: center;
+	margin: 0.5rem 0.4rem;
+}
+
+
+/* 테이블 css */
+table {
+	table-layout: fixed;
+	font-size: 0.8em;
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 1rem;
+	background-color: transparent;
+	text-align: center;
+	border: 1px solid #002060;
+	border-collapse: collapse;
+}
+
+table tbody {
+	border-style: solid;
+	border-color: rgb(216, 216, 216);
+	border-width: 0.5px 0 0 0.5px;
+}
+
+/* th 정의 */
+table>tbody>tr:nth-child(odd)>th, .thead>th {
+	font-size: 0.85em;
+	color: #ffffff;
+	background-color: #002060; /*녹색, #5b465d*/
+}
+
+table>thead>tr>th, table>tbody>tr>th {
+	border: 2px solid #002060;
+	line-height: 1.8;
+}
+
+table thead th {
+	vertical-align: bottom;
+	border-bottom: 2px solid #e9ecef;
+}
+
+table th:nth-child(1) {
+	width: 50px;
+}
+
+table th:nth-child(3) {
+	width: 150px;
+}
+
+table th:nth-child(5) {
+	width: 80px;
+}
+
+/* tr 정의 */
+table tbody tr:nth-of-type(odd) {
+	background-color: rgba(0, 0, 0, .05);
+}
+
+table tbody tr:hover {
+	background-color: rgba(0, 0, 0, .075);
+}
+
+/* */
+table td {
+	border-color: rgb(216, 216, 216);
+	border-width: 0 0.5px 0.5px 0;
+}
+
+table td, table th {
+	border: 1px solid #e9ecef;
+}
+
+table td, table th {
+	padding: .3rem;
+}
